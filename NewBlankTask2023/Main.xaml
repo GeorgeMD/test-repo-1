@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="745,827" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,923" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
       <x:String>System.Activities</x:String>
@@ -57,7 +57,7 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="400,172" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="454,858" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
       <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
@@ -67,6 +67,40 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="338,60" sap2010:WorkflowViewState.IdRef="Assign_1" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Studio – PushService.cs [Debugger]" sap:VirtualizedContainerService.HintSize="412,376" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,82" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1912, -8, 1936, 1056" FilePath="C:\Program Files\JetBrains\JetBrains Rider 2020.3.3\bin\rider64.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAYfSURBVFhHrZd7UFRVHMf5g8mlAeUpaLiuqIi6gYIoIg9JQMwHJL5QVB4L64tAEVAwwbGpjNJKyyyNDBwVS0JSavxjZ3SKGkxskNQBdgVEcBdcHi4Lu9i3cy5377IPw1y/M5/Ze36/c37fc869e3eP1UiqdxYtlE1IuKQ5N3YTJFbWbNi8CmBrU9DnzrYsU53LNtsGh5SjjY4poMijwyUD346rUR/jL2K7GIqY8/Zpro96Z6CQjby46KqJqUxnzqLu2T+zXnXEAz3velX25noL2e6cOQGj9mmUpM1jM/9Pxqs2RuqWdLf3fS9tz34hujJ9tcotc78+kXZwss58GMlsyedXo0NqEDExXrUJDwJiJN17fKBM80dzcjgWZN4aNDKnVLNlR5ZMkMBrcEwpJMW1xmbPQNuxIfRuszgMwbtvGhsz2BDGZKvmsBb/LVLwjpEBQ0x09EuFtTNVo6OozdwEQkNCXiqsnamkjqJKcxPw8fZmGC6VSoW627eRnZVlkh8cHER9fT1KS0sRGRHB5XWwdqZ61lPP5/MZqORyOVO4vLycuaYKDAw0yFdVVaGzs5Npd3d3c3kdZKfz6fPG2uoldRJtNzcBOzs7Bqpr165x7fj4eCaWm5vL5UtKSphrFxcXZGdnM7GKigpuDGWorqitwSl1s8SqQP9GZV86BuYUkmKgoqsTCAQQCoUoKipiYrGxsVyexnT9ra2t0dLSAqVSycUoRvVrGp3EQ2/Ue3apzkZJBt1AcyorKwOPx+PywydAoc+CQqEwiJnzIBSRHPNVVNCA1EUEqWsypOOSuIFUMpkM+fn5TGGtVgsvLy+D/PAJ0J2hKi4u5mKUYaYc5Asw9MaUuiVWycYngvzq4f7ETbjvsZEbSCWRSJjrgIAAZgLV1dXMVuvydGJ0ErW1tUyb3gJnZ2euBqXeSWw8gTvcs9Dksfn4/cnxaPLcgCav9WiesY4bSKWbAKWwsJCJ0R2hbbo7OiorK5m4ra0t11/HjfE7DSfgkLqUxIfUNH19erNwHVq816Bl9mq0+K0yKWApv0zJR61rGmMudUiRkJhezb6xix/MicWDeSvROv8ttAYxr86XSqnwEK54HmAmILNPmUViehFj99bgFXgYuhwPw5ahLXyp2SKWcNLvKI77f4HfJ2SWk7ap2iKW9rZHLUH7m4vRvizSbBFLOBx4Ch8En8ahoKJS0jZV+4rI6kcx4ZDHLoJ8dZjZIpaQH3YWueEXkBV5UZsRVSYgMUPJ175RpIgLhWJDCDo2BZstYgk7o8qxY+lliJf/jISYq0dIzFCKzUGZnYkL0Cmaj87UALNFLCEp+io2rpRg3erriF37m3p53A1nEtdLKZ4X/XjbXCh3+EOZPocbOJJ0/UZi1ZpfsSLuDyyJ/xPhm24hJKEun8T16sj08+ra5YuurNnozvExW8QSIojpwoRaLEj+G/6p9ZgllioFCTLDn+eevNfJX28hegpmmi1iCfNS7sFX3AjhtiZMS3sAj/R28DPl6SSnV+/B6TVP3puGJ4c8ofpwKlQfT0bfJx7o+2wS+o4JoD7Oh/rEBPSfdEf/N6+BHFQwUOwGzZmxUJ9xw+kDmYjaeBOLNv+FkKQ6BIjuwU/cAO+t9zF9Rwsmp7eBv1OBcbsfwzm7B6P3qitZ6yGpPppyQXWYmH5KDI8Sw88nQv0lH/1fEcNTxLBoPAa+I4YlrtCcHQvNeRdoLzih6zwfOdknEZp4G4Giu8wW+2yVYcb2Fkx9+yEEGXKMz3wMl+xu2O9R4dW8fgU5wIjJAcbwqDdwTBBNVinTr5IYntavUnOOGJY6Q/u9EwbLHDB4yR4dPwg64jIqh+7rFilmbm+GJzGdlPEI7rs64ZrVBYc9T2Cb20//smtt8jRH7Qtgz1qal7rYbSFZZTFZpVp7fshQe9ERgz8S04oxeHrFjuGfK3YVNWUL7cl9TZ+W1tpG76v7rg7G1DGnF3a56uHnhauv5A7oj3PPI5TZ2z+9NEZMTKt0phyXRx9kuzESFMh4Tnt6ckbv7VMOMwUvTyOzyRtYy3Z7ceEnWyExLiTUD162jWXDJqLby9unzaeHVPr53wdVK6t/AWQrRj7vslc9AAAAAElFTkSuQmCC" InformativeScreenshot="399793bf91acec23f9dbc1b3e1fd37eb.png" Selector="&lt;wnd app='rider64.exe' cls='SunAwtFrame' title='Studio – PushService.cs [Debugger]'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" WorkbookPath="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="412,352" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1">
+      <ueab:ExcelApplicationCard.Body>
+        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelApplicationCard.Body>
+    </ueab:ExcelApplicationCard>
   </ueab:SequenceX>
 </Activity>
