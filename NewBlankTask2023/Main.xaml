@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,851" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,851" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
       <x:String>System.Activities</x:String>
@@ -57,7 +57,7 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="454,466" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
       <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
@@ -67,5 +67,24 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: repo test (master) - Git Extensions" sap:VirtualizedContainerService.HintSize="412,376" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,82" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" FilePath="C:\Program Files (x86)\GitExtensions\gitextensions.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANySURBVFhHvZdfSFNRHMdXRkEFYT1FRCQVuntnVOLwzsYeMpi6nXvVWRRkUg9h0auIVAsKFvpQJPkQBD1EJvVQ03ZXhkgFEb0kOLdlhYQPUij4kFS20+/e/TZvZ+e6zX9f+D5s53vO53fP7vkzy0pLDsl+opJW/Li6IiHlIlFlCk6QEGnBr1dH8NTNOjhZQLIIlZzF5pWVN6ycBOBfAzzlOW9IOY6xlZFHVQiA/jBgo3+TMPFgfHkFU3wEPMuBsv4lh2U3dvtfsQrhfFSytRodl2ynsdlU7ufuDURVLoMDScs/GKjmL6l2WZUvaX2w+7xikvgJTBmPYXPOAtg3Bk4B+gSbzQWwtwxc89yIS9iMkazyvfRtAaBxBaBJN0bMFZfEO5wCaMwhNGEkq+BJGzPhMvWqyjmMmCsqCQ3cAiTxPUayCna/V7wCSD+xYcRcH4+WbgLYDAPXncvLCOu8jgtX5ShGsgtgnSwcPTNWIezBWIZgfe8EEO/th+mXL2Asu0bLi7cB7DsD1x2VxPGos3Q3RtOqDdbuANAIC0aPe4KejRjNTbAfnOIVgB6L2Ev2YtSi9Cv7APKVgaasHUTVGM1PALrLgI2ejleItdrgAJlioAYrARwuf1GfrwBADxmw7qjDRrvanNoJx1nvKSv3fL2+AhxucRoRhPUADBrhw65S2n6zigM0mnT7/f61OMzSpM1EXBICGnyIHKRnHlRzgGknvGH5CnZdXnX4nR2NTz2mUy4/8yZarro6Mb580n5HPOFM4Q0wK9fc+2lPmTUxWC4EtFnD7ktTTV9NIeztL3jQlE90VdEOh0AflVnpkF1IvSs9gy7XOhxmcUpuLmSUB025ud2ZuHWomPYC/PU8XHfcIfYuugif6tu6MJzMwt2v6faB4vrHZdaZNww8XQScrjhkHqKWNQDo44N1T8C+b8e05Z1dsGpbNK+ApIX8LqIw+DEONOUPdWrddoymFZFKdgHscyZc9+Rwpa0Qo1mkP70cYaBpuPZSYjJD8UpbEUz5FKcAzX6MLSyY+sMcMCVh+Wf9QH0RxkwFl1jCgWuezGlpwnq/zisAzvMbGMkq+M0HOAXQ0UrRhRFzwQyEeAXkdJ1CxRw2N6+AmENsw4i5ABbNgKvyNDbnJDzAZjkF3MeIuQA2wcA1R7A5ZwGQ9/8iiM0oi+UfA+O0LawalZ0AAAAASUVORK5CYII=" InformativeScreenshot="956706dbb54e342472d1b1f52630af09.png" Selector="&lt;wnd app='gitextensions.exe' ctrlname='FormBrowse'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </ueab:SequenceX>
 </Activity>
